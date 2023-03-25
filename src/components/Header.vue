@@ -2,12 +2,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 navigation" id="navbar">
        <div class="container">
          <a class="navbar-brand font-weight-bold" href="#">E-Shop</a>
-     
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
-     
          <div class="collapse navbar-collapse " id="main-navbar">
            <ul class="navbar-nav mx-auto">
              <li class="nav-item active">
@@ -55,7 +53,7 @@
                  Account.
                </a>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                 <li><a href="#">Dahsboard</a></li>
+                 <li><a href="#">Dashboard</a></li>
                  <li><a href="#">Orders</a></li>
                  <li><a href="#">Downloads</a></li>
                  <li><a href="#">Address</a></li>
