@@ -5,9 +5,9 @@
 </template>
 <script>
 //importing bootstrap 5 Modules
-import Header from './Header'
-import Footer from './Footer'
-import Home from './Home'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './components/Home'
 export default {
  
 components: {
