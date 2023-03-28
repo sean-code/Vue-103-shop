@@ -1,19 +1,6 @@
-# vuetemplate
+# Online Shop
 
-## Project setup
-```
-npm install
-```
+* Developed by <a href='https://github.com/sean-code'>John Nganga</a>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Deployed Here https://vue-103.vercel.app/
