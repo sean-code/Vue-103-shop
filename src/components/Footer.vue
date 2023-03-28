@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-lg-6">
-                <p class="copyright mb-0 ">@ Copyright Reserved to therichpost &amp; made by <a href="https://therichpost.com/">therichpost</a></p>
+                <p class="copyright mb-0 ">@ Copyright Reserved to therichpost &amp; made by <a href="https://github.com/sean-code">John Nganga</a></p>
             </div>
             <div class="col-lg-6">
                 <ul class="list-inline mb-0 footer-btm-links text-lg-right mt-2 mt-lg-0">
