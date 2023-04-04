@@ -28,6 +28,7 @@
                  <li><a href="#">Contact</a></li>
                  <li><a href="#">404 Page</a></li>
                  <li><a href="#">FAQ</a></li>
+                 
                </ul>
              </li><!-- /Pages -->
              <!-- / Blog -->
@@ -65,7 +66,7 @@
              </li><!-- / Account -->
      
              <li class="nav-item">
-               <a class="nav-link" href="#">Contact Us</a>
+               <router-link class="nav-link" to="/contact">Contact Us</router-link>
              </li>
            </ul>
          </div>
@@ -125,4 +126,5 @@
          </ul>
        </div>
      </nav>
+     <router-view />
    </template>
