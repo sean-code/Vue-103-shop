@@ -13,13 +13,13 @@
              </li>
      
              <li class="nav-item">
-               <router-link to="/" class="nav-link" href="#">About Us</router-link>
+               <router-link to="/" class="nav-link" href="#">About</router-link>
              </li>
              <!-- Pages -->
              <li class="nav-item dropdown dropdown-slide">
                <router-link to='/' class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Pages.
+                 Pages
                </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
                  <li><router-link to="/">About Us</router-link></li>
@@ -36,7 +36,7 @@
              <li class="nav-item dropdown dropdown-slide">
                <router-link to="/" class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Shop.
+                 Shop
                </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
                  <li><router-link to="/">Shop</router-link></li>
@@ -51,7 +51,7 @@
              <li class="nav-item dropdown dropdown-slide">
                <router-link to="/" class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Account.
+                 Account
                </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
                  <li><router-link to="/">Dashboard</router-link></li>
@@ -66,7 +66,7 @@
              </li><!-- / Account -->
      
              <li class="nav-item">
-               <router-link class="nav-link" to="/contact">Contact Us</router-link>
+               <router-link class="nav-link" to="/contact">Contact</router-link>
              </li>
            </ul>
          </div>
