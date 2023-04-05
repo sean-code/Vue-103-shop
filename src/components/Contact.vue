@@ -1,42 +1,34 @@
 <template>
-    <div class="container">
-        <div class="row">
-                <h1>contact us</h1>
-        </div>
-        <div class="row">
-                <h4 style="text-align:center">We'd love to hear from you!</h4>
-        </div>
-        <div class="row input-container">
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <input type="text" required />
-                        <label>Name</label> 
+    <div class="super-body">
+        <div class="body">
+            <section class="contact-us" id="contact-section">
+                <form id="contact" action="" method="post">
+                    <div class="section-heading">
+                    <h4>Contact us</h4>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input">
-                        <input type="text" required />
-                        <label>Email</label> 
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="styled-input" style="float:right;">
-                        <input type="text" required />
-                        <label>Phone Number</label> 
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="styled-input wide">
-                        <textarea required></textarea>
-                        <label>Message</label>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <div class="btn-lrg submit-btn">Send Message</div>
-                </div>
-        </div>
-</div>
 
+                    <div class="inputField">
+                    <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
+                    <span class="valid_info_name"></span>
+                    </div>
+
+                    <div class="inputField">
+                    <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+                    <span class="valid_info_email"></span>
+                    </div>
+
+                    <div class="inputField">
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    <span class="valid_info_message"></span>
+                    </div>
+
+                    <div class="inputField btn">
+                    <button type="submit" id="form-submit" class="main-gradient-button" disabled>Send a message</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
 </template>
 
 
@@ -48,135 +40,158 @@
 
 
 <style scoped>
-    body {
-    background-color: #444442;
-    padding-top: 85px;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
+.super-body, .body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
-    font-weight: 600;
-    font-size: 72px;
-    color: white;
-    text-align: center;
+.super-body, .body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5efef68;
 }
 
-h4 {
-    font-family: 'Roboto', sans-serif, 'arial';
-    font-weight: 400;
-    font-size: 20px;
-    color: #9b9b9b;
-    line-height: 1.5;
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-/* ///// inputs /////*/
-
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
-    color: #999;
-    top: -5px;
-    -webkit-transition: all 0.225s ease;
-    transition: all 0.225s ease;
+section.contact-us #contact {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: auto;
+  background-color: #dbd5d59f;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
-.styled-input {
-    float: left;
-    width: 293px;
-    margin: 1rem 0;
-    position: relative;
-    border-radius: 4px;
+section.contact-us .section-heading {
+  position: relative; 
+  display: block;
+  margin: auto;
 }
 
-@media only screen and (max-width: 768px){
-    .styled-input {
-        width:100%;
-    }
+.section-heading h4 {
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #fb5c42;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
-.styled-input label {
-    color: #999;
-    padding: 1.3rem 30px 1rem 30px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
+input, textarea {
+  width: 310px;
+  position: relative;
+  display: block;
+  background-color: #f4f7fb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  outline-color: #fb5c42;;
 }
 
-.styled-input.wide { 
-    width: 650px;
-    max-width: 100%;
-}
-
-input,
-textarea {
-    padding: 30px;
-    border: 0;
-    width: 100%;
-    font-size: 1rem;
-    background-color: #2d2d2d;
-    color: white;
-    border-radius: 4px;
-}
-
-input:focus,
-textarea:focus { outline: 0; }
-
-input:focus ~ span,
-textarea:focus ~ span {
-    width: 100%;
-    -webkit-transition: all 0.075s ease;
-    transition: all 0.075s ease;
+input {
+  height: 40px;
+  padding: 0px 15px;
 }
 
 textarea {
-    width: 100%;
-    min-height: 15em;
+  min-height: 140px;
+  max-height: 180px;
+  padding: 15px;
+  resize: none;
 }
 
-.input-container {
-    width: 650px;
-    max-width: 100%;
-    margin: 20px auto 25px auto;
+.contact-us span {
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
-.submit-btn {
-    float: right;
-    padding: 7px 35px;
-    border-radius: 60px;
-    display: inline-block;
-    background-color: #4b8cfb;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-              0 2px 10px 0 rgba(0,0,0,0.07);
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+.valid_info_name, .valid_info_email, .valid_info_message{
+  display: inline-block;
+  font-size: 13px;
+  margin: 5px 2px;
 }
 
-.submit-btn:hover {
-    transform: translateY(1px);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-              0 1px 1px 0 rgba(0,0,0,0.09);
+.valid {
+  border: 2px solid green;
+  outline-color: green;
 }
 
-@media (max-width: 768px) {
-    .submit-btn {
-        width:100%;
-        float: none;
-        text-align:center;
-    }
+.invalid {
+  border: 2px solid red;
+  outline-color: red;
 }
 
-input[type=checkbox] + label {
-  color: #ccc;
-  font-style: italic;
-} 
-
-input[type=checkbox]:checked + label {
-  color: #f00;
-  font-style: normal;
+.btn {
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
 }
+
+#form-submit {
+  position: relative;
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fb5c42;
+  background: rgb(219,138,222);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s;
+  transition: all .3s;
+}
+
+#form-submit:disabled {
+  border: 1px solid #9e9e9e;
+  background: #fb5c42;;
+  color: #fff;
+  transition: none;
+  transform: none;
+  cursor: default;
+}
+
+#form-submit:hover:disabled{
+  border: 1px solid #fb5c42;
+  transition: none;
+  transform: none;
+  cursor: default;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #fb5c42;
+}
+   
 </style>
