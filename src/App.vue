@@ -1,23 +1,17 @@
 <template>
     <Header />
-      <Home />
-      <Contact />
     <Footer />
-    <router-view />
 </template>
 <script>
 //importing bootstrap 5 Modules
 import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
+
 export default {
- 
+
 components: {
-   Header,
-   Footer,
-   Home,
-   Contact
+  Header,
+  Footer,
  }
 }
 </script>

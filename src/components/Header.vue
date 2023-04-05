@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 navigation" id="navbar">
        <div class="container">
-         <a class="navbar-brand font-weight-bold" href="#">Online Shopping</a>
+         <router-link to="/" class="navbar-brand font-weight-bold" href="#">Online Shopping</router-link>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -9,59 +9,59 @@
          <div class="collapse navbar-collapse " id="main-navbar">
            <ul class="navbar-nav mx-auto">
              <li class="nav-item active">
-               <a class="nav-link" href="#">Home </a>
+               <router-link to="/" class="nav-link" href="#">Home </router-link>
              </li>
      
              <li class="nav-item">
-               <a class="nav-link" href="#">About Us</a>
+               <router-link to="/" class="nav-link" href="#">About Us</router-link>
              </li>
              <!-- Pages -->
              <li class="nav-item dropdown dropdown-slide">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
+               <router-link to='/' class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Pages.
-               </a>
+               </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                 <li><a href="#">About Us</a></li>
-                 <li><a href="#">Blog</a></li>
-                 <li><a href="#">Blog Single</a></li>
-                 <li><a href="#">Contact</a></li>
-                 <li><a href="#">404 Page</a></li>
-                 <li><a href="#">FAQ</a></li>
+                 <li><router-link to="/">About Us</router-link></li>
+                 <li><router-link to="/">Blog</router-link></li>
+                 <li><router-link to='/'>Blog Single</router-link></li>
+                 <li><router-link to="/">Contact</router-link></li>
+                 <li><router-link to="/">404 Page</router-link></li>
+                 <li><router-link to="/">FAQ</router-link></li>
                  
                </ul>
              </li><!-- /Pages -->
              <!-- / Blog -->
      
              <li class="nav-item dropdown dropdown-slide">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
+               <router-link to="/" class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Shop.
-               </a>
+               </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                 <li><a href="#">Shop</a></li>
-                 <li><a href="#">Product Details</a></li>
-                 <li><a href="#">Checkout</a></li>
-                 <li><a href="#">Cart</a></li>
-                 <li><a href="#">Confirmation</a></li>
+                 <li><router-link to="/">Shop</router-link></li>
+                 <li><router-link to="/">Product Details</router-link></li>
+                 <li><router-link to="/">Checkout</router-link></li>
+                 <li><router-link to="/">Cart</router-link></li>
+                 <li><router-link to="/">Confirmation</router-link></li>
                </ul>
              </li><!-- / Blog -->
      
              <!-- Account -->
              <li class="nav-item dropdown dropdown-slide">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-delay="350"
+               <router-link to="/" class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-delay="350"
                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Account.
-               </a>
+               </router-link>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                 <li><a href="#">Dashboard</a></li>
-                 <li><a href="#">Orders</a></li>
-                 <li><a href="#">Downloads</a></li>
-                 <li><a href="#">Address</a></li>
-                 <li><a href="#">Profile Details</a></li>
-                 <li><a href="#">Login Page</a></li>
-                 <li><a href="#">SignUp Page</a></li>
-                 <li><a href="#">Forgot Password</a></li>
+                 <li><router-link to="/">Dashboard</router-link></li>
+                 <li><router-link to="/">Orders</router-link></li>
+                 <li><router-link to="/">Downloads</router-link></li>
+                 <li><router-link to="/">Address</router-link></li>
+                 <li><router-link to="/">Profile Details</router-link></li>
+                 <li><router-link to="/">Login Page</router-link></li>
+                 <li><router-link to="/">SignUp Page</router-link></li>
+                 <li><router-link to="/">Forgot Password</router-link></li>
                </ul>
              </li><!-- / Account -->
      
@@ -74,13 +74,13 @@
      
          <ul class="top-menu list-inline mb-0 d-none d-lg-block" id="top-menu">
            <li class="list-inline-item">
-             <a href="#" class="search_toggle" id="search-icon"><i class="tf-ion-android-search"></i></a>
+             <router-link to="/" class="search_toggle" id="search-icon"><i class="tf-ion-android-search"></i></router-link>
            </li>
      
            <li class="dropdown cart-nav dropdown-slide list-inline-item">
-             <a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown" data-hover="dropdown">
+             <router-link to="/" class="dropdown-toggle cart-icon" data-toggle="dropdown" data-hover="dropdown">
                <i class="tf-ion-android-cart"></i>
-             </a>
+             </router-link>
              <div class="dropdown-menu cart-dropdown">
                <!-- Cart Item -->
                <div class="media">
