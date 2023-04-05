@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 navigation" id="navbar">
        <div class="container">
-         <router-link to="/" class="navbar-brand font-weight-bold" href="#">Online Shopping</router-link>
+         <router-link to="/" class="navbar-brand font-weight-bold" href="#">Shawn Shop</router-link>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,6 @@
                  <li><router-link to="/">Blog</router-link></li>
                  <li><router-link to='/'>Blog Single</router-link></li>
                  <li><router-link to="/">Contact</router-link></li>
-                 <li><router-link to="/">404 Page</router-link></li>
                  <li><router-link to="/">FAQ</router-link></li>
                  
                </ul>
@@ -128,3 +127,9 @@
      </nav>
      <router-view />
    </template>
+
+<style>
+  .navbar-brand{
+    font-size: 2.0rem;
+  }
+</style>

@@ -4,12 +4,12 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 col-sm-6 mb-5 mb-lg-0 text-center text-sm-left mr-auto">
                     <div class="footer-widget">
-                            <h4 class="mb-4">E-Shop</h4>
+                            <h4 class="mb-4">Shawn Shop</h4>
                             <p class="lead">Iste dolores iure quis excepturi, deserunt praesentium.</p>
 
                         <div class="">
-                            <p class="mb-0"><strong>Location : </strong>North Punjab ,INDIA</p>
-                            <p><strong>Support Email : </strong> support@email.com</p>
+                            <p class="mb-0"><strong>Location : </strong>NYC Boulevard, NRB</p>
+                            <p><strong>Support Email : </strong> seancode@email.com</p>
                         </div>
                     </div>
                 </div>
